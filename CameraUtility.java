@@ -40,8 +40,10 @@ public void CaptureImage() {
 
  public void setImage(Context context, String url, ImageView imageView) {
         RequestOptions requestOptions = new RequestOptions();
-        requestOptions.placeholder(R.drawable.img_placeholder);
-        requestOptions.error(R.drawable.img_placeholder);
+//   Use these line is you want a Place holder or error holder on image not availble
+   
+//         requestOptions.placeholder(R.drawable.img_placeholder);
+//         requestOptions.error(R.drawable.img_placeholder);
         requestOptions.diskCacheStrategy(DiskCacheStrategy.ALL);
         if (url != null)
         {
